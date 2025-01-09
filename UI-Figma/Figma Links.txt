@@ -1,0 +1,713 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1- Login Page : 
+------------------------
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Be+Vietnam+Pro%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Galileo Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] group/design-root overflow-x-hidden" style='font-family: "Be Vietnam Pro", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1">
+            <h1 class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 text-center pb-3 pt-5">
+              ATLAS - Automated Tracking and Logging Attendance System
+            </h1>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#141414] text-base font-medium leading-normal pb-2">Email/Username</p>
+                <input
+                  placeholder="Enter your email or username"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#141414] focus:outline-0 focus:ring-0 border-none bg-[#F0F2F5] focus:border-none h-14 placeholder:text-[#3E4D5B] p-4 text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#141414] text-base font-medium leading-normal pb-2">Password</p>
+                <input
+                  placeholder="Enter your password"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#141414] focus:outline-0 focus:ring-0 border-none bg-[#F0F2F5] focus:border-none h-14 placeholder:text-[#3E4D5B] p-4 text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex px-4 py-3 justify-end">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#359EFF] text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Login</span>
+              </button>
+            </div>
+            <p class="text-[#3E4D5B] text-sm font-normal leading-normal pb-3 pt-1 px-4 underline">Forgot password?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2- Dashboared :
+
+----------------------
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Be+Vietnam+Pro%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Galileo Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] group/design-root overflow-x-hidden" style='font-family: "Be Vietnam Pro", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col w-80">
+            <div class="flex h-full min-h-[700px] flex-col justify-between bg-[#FFFFFF] p-4">
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                  <div class="flex items-center gap-3 px-3 py-2 rounded-lg bg-[#F0F2F5]">
+                    <div class="text-[#141414]" data-icon="CalendarCheck" data-size="24px" data-weight="fill">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM169.66,133.66l-48,48a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L116,164.69l42.34-42.35a8,8,0,0,1,11.32,11.32ZM48,80V48H72v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="text-[#141414] text-sm font-medium leading-normal">Attendance</p>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#141414]" data-icon="Users" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="text-[#141414] text-sm font-medium leading-normal">Students</p>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#141414]" data-icon="Book" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M208,24H72A32,32,0,0,0,40,56V224a8,8,0,0,0,8,8H192a8,8,0,0,0,0-16H56a16,16,0,0,1,16-16H208a8,8,0,0,0,8-8V32A8,8,0,0,0,208,24Zm-8,160H72a31.82,31.82,0,0,0-16,4.29V56A16,16,0,0,1,72,40H200Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="text-[#141414] text-sm font-medium leading-normal">Classes</p>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#141414]" data-icon="Database" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M128,24C74.17,24,32,48.6,32,80v96c0,31.4,42.17,56,96,56s96-24.6,96-56V80C224,48.6,181.83,24,128,24Zm80,104c0,9.62-7.88,19.43-21.61,26.92C170.93,163.35,150.19,168,128,168s-42.93-4.65-58.39-13.08C55.88,147.43,48,137.62,48,128V111.36c17.06,15,46.23,24.64,80,24.64s62.94-9.68,80-24.64ZM69.61,53.08C85.07,44.65,105.81,40,128,40s42.93,4.65,58.39,13.08C200.12,60.57,208,70.38,208,80s-7.88,19.43-21.61,26.92C170.93,115.35,150.19,120,128,120s-42.93-4.65-58.39-13.08C55.88,99.43,48,89.62,48,80S55.88,60.57,69.61,53.08ZM186.39,202.92C170.93,211.35,150.19,216,128,216s-42.93-4.65-58.39-13.08C55.88,195.43,48,185.62,48,176V159.36c17.06,15,46.23,24.64,80,24.64s62.94-9.68,80-24.64V176C208,185.62,200.12,195.43,186.39,202.92Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="text-[#141414] text-sm font-medium leading-normal">Sync Data</p>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#141414]" data-icon="Gear" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="text-[#141414] text-sm font-medium leading-normal">Settings</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-4">
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#359EFF] text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">New Attendance</span>
+                </button>
+                <div class="flex flex-col gap-1">
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#141414]" data-icon="Question" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="text-[#141414] text-sm font-medium leading-normal">Help</p>
+                  </div>
+                  <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#141414]" data-icon="Megaphone" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M240,120a48.05,48.05,0,0,0-48-48H152.2c-2.91-.17-53.62-3.74-101.91-44.24A16,16,0,0,0,24,40V200a16,16,0,0,0,26.29,12.25c37.77-31.68,77-40.76,93.71-43.3v31.72A16,16,0,0,0,151.12,214l11,7.33A16,16,0,0,0,186.5,212l11.77-44.36A48.07,48.07,0,0,0,240,120ZM40,199.93V40h0c42.81,35.91,86.63,45,104,47.24v65.48C126.65,155,82.84,164.07,40,199.93Zm131,8,0,.11-11-7.33V168h21.6ZM192,152H160V88h32a32,32,0,1,1,0,64Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p class="text-[#141414] text-sm font-medium leading-normal">Feedback</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#141414] tracking-light text-[32px] font-bold leading-tight">Good morning, Hellen</p>
+                <p class="text-[#3E4D5B] text-sm font-normal leading-normal">Here's your summary for today</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-4 p-4">
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 border border-[#DBE1E6]">
+                <p class="text-[#141414] text-base font-medium leading-normal">Total Students</p>
+                <p class="text-[#141414] tracking-light text-2xl font-bold leading-tight">40</p>
+                <p class="text-[#1A663B] text-base font-medium leading-normal">+5%</p>
+              </div>
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 border border-[#DBE1E6]">
+                <p class="text-[#141414] text-base font-medium leading-normal">Present</p>
+                <p class="text-[#141414] tracking-light text-2xl font-bold leading-tight">35</p>
+                <p class="text-[#DF4991] text-base font-medium leading-normal">-2%</p>
+              </div>
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 border border-[#DBE1E6]">
+                <p class="text-[#141414] text-base font-medium leading-normal">Absent</p>
+                <p class="text-[#141414] tracking-light text-2xl font-bold leading-tight">5</p>
+                <p class="text-[#1A663B] text-base font-medium leading-normal">+1%</p>
+              </div>
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 border border-[#DBE1E6]">
+                <p class="text-[#141414] text-base font-medium leading-normal">Late</p>
+                <p class="text-[#141414] tracking-light text-2xl font-bold leading-tight">2</p>
+                <p class="text-[#DF4991] text-base font-medium leading-normal">-1%</p>
+              </div>
+            </div>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-lg border border-[#DBE1E6] bg-[#FFFFFF]">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-[#FFFFFF]">
+                      <th class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-120 px-4 py-3 text-left text-[#141414] w-[400px] text-sm font-medium leading-normal">
+                        Student Name
+                      </th>
+                      <th class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-240 px-4 py-3 text-left text-[#141414] w-[400px] text-sm font-medium leading-normal">Date</th>
+                      <th class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-360 px-4 py-3 text-left text-[#141414] w-[400px] text-sm font-medium leading-normal">Time</th>
+                      <th class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-480 px-4 py-3 text-left text-[#141414] w-60 text-sm font-medium leading-normal">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        Jenny Smith
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        Jan 15, 2023
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-360 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">9:00 am</td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Present</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        Michael Johnson
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        Jan 15, 2023
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-360 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">9:00 am</td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Present</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        Laura Davis
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        Jan 15, 2023
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-360 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">9:00 am</td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Present</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        Christopher Brown
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        Jan 15, 2023
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-360 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">9:00 am</td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Present</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        Amanda Wilson
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        Jan 15, 2023
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-360 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">9:00 am</td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Present</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        James Taylor
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        Jan 15, 2023
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-360 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">9:00 am</td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Present</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        Sarah Martinez
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        Jan 15, 2023
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-360 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">9:00 am</td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Present</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        John Anderson
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        Jan 15, 2023
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-360 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">9:00 am</td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Present</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        Jessica Thomas
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        Jan 15, 2023
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-360 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">9:00 am</td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Present</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        Robert Hernandez
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        Jan 15, 2023
+                      </td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-360 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">9:00 am</td>
+                      <td class="table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-480 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Present</span>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-120{display: none;}}
+                @container(max-width:240px){.table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-240{display: none;}}
+                @container(max-width:360px){.table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-360{display: none;}}
+                @container(max-width:480px){.table-13b11ac8-f5d3-4b6b-8454-852e622c1e4e-column-480{display: none;}}
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3- Attendance Records Page :
+
+----------------------
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Be+Vietnam+Pro%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Galileo Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] group/design-root overflow-x-hidden" style='font-family: "Be Vietnam Pro", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#F0F2F5] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#141414]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path></svg>
+            </div>
+            <h2 class="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em]">Classroom</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#141414] text-sm font-medium leading-normal" href="#">Home</a>
+              <a class="text-[#141414] text-sm font-medium leading-normal" href="#">Course</a>
+              <a class="text-[#141414] text-sm font-medium leading-normal" href="#">People</a>
+              <a class="text-[#141414] text-sm font-medium leading-normal" href="#">Classes</a>
+              <a class="text-[#141414] text-sm font-medium leading-normal" href="#">Grades</a>
+              <a class="text-[#141414] text-sm font-medium leading-normal" href="#">Feedback</a>
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#F0F2F5] text-[#141414] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+                <div class="text-[#141414]" data-icon="MagnifyingGlass" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#F0F2F5] text-[#141414] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+                <div class="text-[#141414]" data-icon="Bell" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#F0F2F5] text-[#141414] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+                <div class="text-[#141414]" data-icon="Table" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM40,112H80v32H40Zm56,0H216v32H96ZM216,64V96H40V64ZM40,160H80v32H40Zm176,32H96V160H216v32Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/79903334-e4d4-4111-a91a-b2a10721d8e3.png");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#141414] tracking-light text-[32px] font-bold leading-tight min-w-72">Attendance Records</p></div>
+            <div class="flex gap-3 p-3 flex-wrap pr-4">
+              <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#F0F2F5] pl-4 pr-2">
+                <p class="text-[#141414] text-sm font-medium leading-normal">Today</p>
+                <div class="text-[#141414]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                  </svg>
+                </div>
+              </button>
+              <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#F0F2F5] pl-4 pr-2">
+                <p class="text-[#141414] text-sm font-medium leading-normal">Yesterday</p>
+                <div class="text-[#141414]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                  </svg>
+                </div>
+              </button>
+              <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#F0F2F5] pl-4 pr-2">
+                <p class="text-[#141414] text-sm font-medium leading-normal">This Week</p>
+                <div class="text-[#141414]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                  </svg>
+                </div>
+              </button>
+              <button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#F0F2F5] pl-4 pr-2">
+                <p class="text-[#141414] text-sm font-medium leading-normal">Last Week</p>
+                <div class="text-[#141414]" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-lg border border-[#DBE1E6] bg-[#FFFFFF]">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-[#FFFFFF]">
+                      <th class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-120 px-4 py-3 text-left text-[#141414] w-[400px] text-sm font-medium leading-normal">
+                        Student Name
+                      </th>
+                      <th class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-240 px-4 py-3 text-left text-[#141414] w-[400px] text-sm font-medium leading-normal">
+                        DateTime
+                      </th>
+                      <th class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-360 px-4 py-3 text-left text-[#141414] w-60 text-sm font-medium leading-normal">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        Michael Jordan
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        8:00 AM, 9/3
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-360 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Present</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        Lebron James
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        8:00 AM, 9/3
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-360 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Present</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        Stephen Curry
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        8:00 AM, 9/3
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-360 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Absent</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        Kobe Bryant
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        8:00 AM, 9/3
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-360 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Present</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        Shaquille O'Neal
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        8:00 AM, 9/3
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-360 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Present</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        Magic Johnson
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        8:00 AM, 9/3
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-360 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Absent</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        Larry Bird
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        8:00 AM, 9/3
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-360 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Present</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        Kevin Durant
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        8:00 AM, 9/3
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-360 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Present</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        Russell Westbrook
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        8:00 AM, 9/3
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-360 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Absent</span>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="border-t border-t-[#DBE1E6]">
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-120 h-[72px] px-4 py-2 w-[400px] text-[#141414] text-sm font-normal leading-normal">
+                        Kareem Abdul-Jabbar
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-240 h-[72px] px-4 py-2 w-[400px] text-[#3E4D5B] text-sm font-normal leading-normal">
+                        8:00 AM, 9/3
+                      </td>
+                      <td class="table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-360 h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+                        <button
+                          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#F0F2F5] text-[#141414] text-sm font-medium leading-normal w-full"
+                        >
+                          <span class="truncate">Present</span>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                          @container(max-width:120px){.table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-120{display: none;}}
+                @container(max-width:240px){.table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-240{display: none;}}
+                @container(max-width:360px){.table-541e586f-6e2c-4a43-8eba-6d2b634d4b1b-column-360{display: none;}}
+              </style>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <div class="flex px-4 py-3 justify-end">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-[#F0F2F5] text-[#141414] text-base font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Export Data</span>
+              </button>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4- Student/Class/Instructor Management Pages :
+
+----------------------
+I Should Pay To acces the forward pages 
+then thais only pages I can gen the code of them 
+but the nwxt pages with the same Pattern 
+
